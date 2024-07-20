@@ -25,7 +25,7 @@ movies_list = pk.load(open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movies_list)
 similarity = pk.load(open('similarity_matrix.pkl','rb'))
 option = st.selectbox(
-    "How would you like to be contacted?",
+    "Select the movie",
     movies['title'].values)
 st.write("You selected:", option)
 if st.button('recommend'):
